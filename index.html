@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<title>Blackjack</title>
+		<link rel="stylesheet" type="text/css" href="blackjack.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+
+			<div class="page page-1 fade">
+				<section class="page-1-section">
+					<header>
+						<h1 class="glow">Blackjack</h1>
+					</header>
+					<p class="introduction">
+						Welcome to blackjack. You will start with $100 and place a bet for each game. After you place your bet the dealer will deal two cards to you, face up and then two cards for itself - one faced down and the other faced up. If you’re dealt a ten-value card and an Ace as your first two cards that means you got a Blackjack! If the dealer also has a Blackjack, you wouldn’t win anything but you also wouldn’t lose your original wager. This is called a “push”. If YOU don’t have a Blackjack AND the dealer doesn’t have a blackjack, your dealer will point to each player in succession and wait for you to decide how you want to play your hand.
+						Stand – If your first two cards are acceptable, you can stand and the dealer will move on.
+						Hit – If you would like more cards to improve your hand total, the dealer will deal you more cards, one at a time, until you either “bust” (go over 21) or you choose to stand. There is no limit on the number of cards you can take.
+						<!-- Double Down – If you have a hand total that is advantageous to you but you need to take an additional card you can double your initial wager and the dealer will deal you only 1 additional card. To be implemented...-->
+					</p>
+					<button class="start-btn">
+						Start
+					</button>
+				</section>
+			</div>
+
+			<div class="page page-2 fade">
+				
+				<section class="page-2-section">
+					<header>
+						<h1>Blackjack</h1>
+					</header>
+					<div class="bet-container">
+						<p class="max-balance">Highest Balance Reached: $100</p>
+						<p class="current-balance">Current Balance: $100</p>
+						<p>Place Your Bet</p>
+						<div class="bet-buttons">
+							<button class="minus-btn minus-five">
+								-5
+							</button>
+							<button class="minus-btn minus-one">
+								-1
+							</button>
+							<button class="bet-value" value="1">
+								1
+							</button>
+							<button class="plus-btn plus-one">
+								+1
+							</button>
+							<button class="plus-btn plus-five">
+								+5
+							</button>
+						</div>
+						<button class="go-btn">
+							GO
+						</button>
+					</div>
+
+				</section>
+			</div>
+
+			<div class="page page-3 fade">
+				<section class = "page-3-section">
+					<div class="dealer-cards">
+					</div>
+					<div class="game-text"><h2> </h2></div>
+					<div class="player-cards">
+					</div>
+					<div class="game-buttons">
+					</div>
+				</section>
+			</div>
+
+		</main>
+		<script type="text/javascript" src="blackjack.js"></script>
+	</body>
+</html>
