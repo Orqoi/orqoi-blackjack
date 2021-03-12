@@ -129,6 +129,7 @@ main{
 
 .card{
 	width: 8rem;
+	height: auto;
 }
 
 .hit, .stand{
