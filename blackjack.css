@@ -221,5 +221,9 @@ main{
 	.bet-container{
 		height: 45%;
 	}
+	
+	.page-2-section{
+		font-size: 6vw;
+	}
 
 }
