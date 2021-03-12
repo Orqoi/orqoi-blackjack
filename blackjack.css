@@ -218,5 +218,8 @@ main{
 		margin: 0 0.05rem;
 		padding: 0.05rem 0.75rem;
 	}
+	.bet-container{
+		height: 30%;
+	}
 
 }
