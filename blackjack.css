@@ -61,6 +61,7 @@ main{
 	position: relative;
 	display: flex;
 	width: 50vw;
+	max-height: 90vh;
 }
 
 .start-btn{
