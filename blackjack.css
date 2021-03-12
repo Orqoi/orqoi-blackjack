@@ -79,8 +79,6 @@ main{
 	align-items: center;
 	text-align: center;
 	height: 100%;
-	border-radius: 5rem;
-	background: rgba(42, 176, 90, 0.2);
 }
 
 .go-btn{
