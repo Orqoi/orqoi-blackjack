@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<title>Blackjack</title>
+		<link rel="stylesheet" type="text/css" href="blackjack.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+
+			<div class="page page-1 fade">
+				<section class="page-1-section">
+					<div class="background">
+						<h1 class="glow header">Blackjack</h1>
+						<img src="bg.png" class="bg-picture" alt="background"/>
+					</div>
+					
+					<button class="start-btn">
+						Start
+					</button>
+				</section>
+			</div>
+
+			<div class="page page-2 fade">
+				
+				<section class="page-2-section">
+					<div class="bet-container">
+						<p class="max-balance">Highest Balance Reached: $100</p>
+						<p class="current-balance">Current Balance: $100</p>
+						<p class="bet-heading">Place Your Bet</p>
+						<div class="bet-value-container">
+							$
+							<span class="bet-value">
+								1
+							</span>
+						</div>
+						<div class="bet-buttons">
+							<button class="minus-btn minus-five">
+								-5
+							</button>
+							<button class="minus-btn minus-one">
+								-1
+							</button>
+							<button class="plus-btn all-in">
+								All In
+							</button>
+							
+							<button class="plus-btn plus-one">
+								+1
+							</button>
+							<button class="plus-btn plus-five">
+								+5
+							</button>
+						</div>
+						<button class="go-btn">
+							GO
+						</button>
+					</div>
+
+				</section>
+			</div>
+
+			<div class="page page-3 fade">
+				<section class = "page-3-section">
+					<div class="dealer-cards">
+					</div>
+					<div class="game-text"><h2> </h2></div>
+					<div class="player-cards">
+					</div>
+					<div class="game-buttons">
+					</div>
+				</section>
+			</div>
+
+		</main>
+		<script type="text/javascript" src="blackjack.js"></script>
+	</body>
+</html>

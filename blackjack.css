@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rye', cursive;
+}
+
+img{
+	max-width: 100%;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	background: radial-gradient(#2dbd5f,#1d7a3e, #157007);
+}
+
+h1{
+	font-size: 6rem;
+}
+
+main{
+	margin: 0 auto;
+	width: 80vw;
+	height: 100%;
+}
+
+.header{
+	color: #d4af37;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	font-size: 8vw;
+	top: 45%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.page-1{
+	display: initial;
+}
+
+.page-2{
+	display: none;
+}
+
+.page-3{
+	display: none;
+}
+
+
+.page-1-section{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.background{
+	position: relative;
+	display: flex;
+	width: 50vw;
+}
+
+.start-btn{
+	font-size: 2.5vw;
+	padding: 0.5rem 3rem;
+	border-radius: 2.5rem;
+	outline: none;
+}
+
+.page-2-section{
+	font-size: 3vw;
+	color: #d4af37;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	border-radius: 5rem;
+	background: rgba(42, 176, 90, 0.2);
+}
+
+.go-btn{
+	font-size: inherit;
+	align-self: center;
+	padding: 0.5rem 5rem;
+	border-radius: 4rem;
+	outline: none;
+}
+
+.plus-btn, .minus-btn{
+	font-size: inherit;
+	margin: 0 0.25rem;
+	padding: 0.5rem 2.5rem;
+	outline: none;
+}
+
+.bet-value,.bet-value-container{
+	font-size: inherit;
+}
+
+.bet-container{
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.page-3-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+.dealer-cards{
+	margin-top: 5rem;
+}
+
+.dealer-cards, .player-cards{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+
+}
+
+.card{
+	width: 8rem;
+}
+
+.hit, .stand{
+	font-size: 2.25rem;
+	margin: 1.25rem;
+}
+
+.game-text{
+	font-size: 3rem;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.end-btn{
+	font-size: 2rem;
+	padding: 0.25rem 1.25rem;
+	border-radius: 4rem;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d3d600, 0 0 40px #d3d600, 0 0 50px #d3d600, 0 0 60px #d3d600, 0 0 70px #d3d600;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #eded68, 0 0 40px #eded68, 0 0 50px #eded68, 0 0 60px #eded68, 0 0 70px #eded68, 0 0 80px #eded68;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 900px) {
+	.header{
+		font-size: 12vw;
+	}
+
+	.background{
+		width: 75vw;
+	}
+
+	.start-btn{
+		font-size: 3.75vw;
+	}
+
+	.plus-btn, .minus-btn{
+		margin: 0 0.15rem;
+		padding: 0.25rem 1.25rem;
+	}
+
+	.page-2-section{
+		font-size: 4vw;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.header{
+		font-size: 16vw;
+	}
+
+	.background{
+		width: 90vw;
+	}
+
+	.start-btn{
+		font-size: 5vw;
+	}
+
+	.plus-btn, .minus-btn{
+		margin: 0 0.05rem;
+		padding: 0.05rem 0.75rem;
+	}
+
+	.page-2-section{
+		justify-content: space-around;
+	}
+
+}
