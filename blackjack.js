@@ -326,7 +326,7 @@ class Computer{
 			}
 			let oImg = document.createElement("img");
 			oImg.setAttribute('src', card.src());
-			oImg.setAttribute('class', 'card');
+			oImg.setAttribute('class', 'fade card');
 			this.node.appendChild(oImg);
 			
 		}
